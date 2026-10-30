@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dance Styles | Kent Bebero</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">KB</span><span>KENT <b>BEBERO</b><small>MOVE WITH PASSION</small></span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav"><a href="index.html">Home</a><a class="active" href="styles.html">Dance Styles</a><a href="about.html">About Kent</a></nav>
+  </header>
+  <main>
+    <section class="page-hero column-grid">
+      <div><p class="eyebrow">THE MOVEMENT LIBRARY / 02</p><h1>FIND YOUR<br><em>OWN STYLE.</em></h1><p>Every style has its own story, rhythm, and personality. Explore a few foundations of hip-hop dance.</p></div>
+      <div class="page-hero-stamp">MOVE<br>YOUR<br>WAY<span>✳</span></div>
+    </section>
+    <section class="styles-list section-pad">
+      <div class="section-heading"><div><div class="section-kicker">03 — THE FOUNDATIONS</div><h2>Different moves.<br><em>One culture.</em></h2></div><div class="filter-wrap"><label for="styleFilter">SHOW</label><select id="styleFilter"><option value="all">All styles</option><option value="foundation">Street foundation</option><option value="illusion">Illusion & control</option><option value="funk">Funk & attitude</option></select></div></div>
+      <article class="style-row" id="breaking" data-type="foundation"><div class="style-number">01</div><div class="style-info"><p class="eyebrow">STREET FOUNDATION</p><h3>Breaking <span>↗</span></h3><p>Known for toprock, footwork, power moves, and freezes. Breaking combines athletic movement with personal creativity.</p><button class="learn-button" data-style="Breaking" data-detail="Breaking includes upright steps, floor-based footwork, dynamic power moves, and freezes. Dancers build their own combinations and express their personality.">Learn more +</button></div><div class="style-art breaking-art"><span>FREEZE</span><b>01</b></div></article>
+      <article class="style-row" id="popping" data-type="illusion"><div class="style-number">02</div><div class="style-info"><p class="eyebrow">ILLUSION & CONTROL</p><h3>Popping <span>↗</span></h3><p>A style built around quick muscle contractions that create a sharp hit, often combined with waves, glides, and animation.</p><button class="learn-button" data-style="Popping" data-detail="Popping uses controlled muscle contractions, often called hits or pops. Dancers may add waves, glides, and robot-like illusions to create visual effects.">Learn more +</button></div><div class="style-art popping-art"><span>HIT THE BEAT</span><b>02</b></div></article>
+      <article class="style-row" id="locking" data-type="funk"><div class="style-number">03</div><div class="style-info"><p class="eyebrow">FUNK & ATTITUDE</p><h3>Locking <span>↗</span></h3><p>Energetic and playful, locking uses sudden pauses, expressive gestures, and big personality to match the music.</p><button class="learn-button" data-style="Locking" data-detail="Locking features quick stops or locks, points, wrist rolls, and playful gestures. Its lively character invites dancers to perform with confidence and fun.">Learn more +</button></div><div class="style-art locking-art"><span>LOCK IT IN</span><b>03</b></div></article>
+    </section>
+  </main>
+  <footer><span>© 2026 KENT BEBERO</span><span>MADE FOR THE LOVE OF HIP-HOP</span><a href="about.html">KEEP MOVING ↗</a></footer>
+  <div class="modal" id="styleModal" aria-hidden="true"><div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" aria-label="Close">×</button><p class="eyebrow">STYLE NOTES</p><h2 id="modalTitle">Dance style</h2><p id="modalText"></p><button class="btn btn-dark" id="modalDone">Got it</button></div></div>
+</body>
+</html>
